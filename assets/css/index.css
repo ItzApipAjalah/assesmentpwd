@@ -1,0 +1,34 @@
+/* Style untuk menyesuaikan tampilan */
+body {
+  padding-top: 56px; /* Menghindari tumpang tindih dengan navbar */
+}
+
+.navbar-custom {
+  background-color: rgba(0, 112, 186, 1); /* Warna latar belakang navbar */
+}
+
+.bordered-div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  overflow-y: auto; /* Tambahkan properti overflow-y di sini */
+  max-height: 740px; /* Sesuaikan dengan ketinggian maksimum yang diinginkan */
+}
+.bordered-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  overflow-y: auto; /* Tambahkan properti overflow-y di sini */
+  max-height: 800px; /* Sesuaikan dengan ketinggian maksimum yang diinginkan */
+}
+.bordered-dropdown {
+padding: 5px; /* Spasi di dalam div */
+margin-bottom: 15px; /* Spasi antar div */
+}
+
+/* CSS khusus untuk tombol dropdown dengan ukuran lebih besar */
+.btn-extra-large {
+  font-size: 2rem; /* Sesuaikan dengan ukuran yang diinginkan */
+  padding: 0.5rem 11rem; /* Sesuaikan dengan ukuran yang diinginkan */
+  margin-left: 1rem;
+}
