@@ -61,24 +61,9 @@ function hitungTotal() {
 }
 
 function payment() {
-    var invoiceDetails = "=== Invoice ===\n";
-    $("#invoice li").each(function () {
-        var itemName = $(this).text().trim();
-        var totalAmount = $(this).find(".total").text();
-        var quantity = $(this).find(".quantity").text();
-        invoiceDetails += itemName + " - " + totalAmount + " (" + quantity + ")\n";
-    });
-
-    invoiceDetails += "\nTax: " + $("#tax").text() + "\n";
-    invoiceDetails += "Total: " + $("#totalAmount").text() + "\n";
-
-    var blob = new Blob([invoiceDetails]);
-
-    var link = document.createElement("a");
-    link.href = window.URL.createObjectURL(blob);
-    link.download = "payment_receipt.txt";
-    link.click();
+    window.print();
 }
+
 
 function showSearchInputGroup() {
     var searchInputGroupContainer = document.getElementById('searchInputGroupContainer');
@@ -87,4 +72,8 @@ function showSearchInputGroup() {
         } else {
             searchInputGroupContainer.style.display = 'none';
         }
+    }
+
+    function changeText(text) {
+        $('#dropdownMenu2').text(text);
     }
